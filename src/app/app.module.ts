@@ -19,6 +19,7 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
 import { RecipeStartComponent } from './recipes/recipe-start.component';
 
 @NgModule({
+  // Components, Directives and Pipes
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -32,6 +33,7 @@ import { RecipeStartComponent } from './recipes/recipe-start.component';
     RecipeEditComponent,
     RecipeStartComponent
   ],
+  // Import other Modules as well as Routes
   imports: [
     BrowserModule,
     FormsModule,
@@ -39,6 +41,7 @@ import { RecipeStartComponent } from './recipes/recipe-start.component';
     HttpModule,
     routing
   ],
+  // Services
   providers: [RecipeService, ShoppingListService],
   bootstrap: [AppComponent]
 })
